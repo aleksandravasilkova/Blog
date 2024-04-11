@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard - Client area</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+    /* Style for header */
+    .header-section {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 0;
+    }
+  </style>
+  <style>
+    .card-header {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px 20px; /* Adjust padding as needed */
+    }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <!-- Logo or site name -->
+    <a class="navbar-brand" href="#"><img src="sliki/logo.png" alt="Your Logo" width="80"></a>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="HomePage.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PublishingPage.html">Add News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+
+        <div class="card-header d-flex justify-content-between align-items-center bg-dark">
+          <h4>Add News</h4>
+          <a href="HomePage.html" class="btn btn-danger">BACK</a>
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label>Title</label>
+            <input type="text" name="title" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label>Description</label>
+            <input type="text" name="description" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label>News Text</label>
+            <textarea name="description" class="form-control" rows="5"></textarea>
+          </div>
+          <div class="mb-3">
+            <label>Image</label>
+            <div class="input-group">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile" name="image" required>
+                <label class="custom-file-label" for="validatedInputGroupCustomFile">Choose file...</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="submit" value="Submit" class="btn btn-primary">
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
